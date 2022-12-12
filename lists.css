@@ -11,14 +11,16 @@
 h1 {
     text-align: center;
     margin-top: 20px;
+    font-family: 'Roboto';
 }
 
 .container-lg{
     text-align: right;
 }
 
-h3{
+h3, h2{
     text-align: left;
+    font-family: 'Poppins';
 }
 p{
     text-align: justify;

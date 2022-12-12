@@ -11,6 +11,7 @@
 h1 {
     text-align: center;
     margin-top: 20px;
+    font-family: 'Roboto';
 }
 
 .container-lg{
@@ -19,6 +20,7 @@ h1 {
 
 h3{
     text-align: left;
+    font-family: 'Poppins';
 }
 p{
     text-align: justify;
