@@ -1,0 +1,55 @@
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+.nav-item{
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-lg{
+    text-align: right;
+}
+
+h3{
+    text-align: left;
+}
+p{
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    
+    }
+    
+    figcaption{
+    text-align: center;
+     font-size: 1.2rem;
+     margin-top: 20px;
+    }
+
+.reference{
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: #F7EDE2;
+}
+#whole{
+    padding-left: 5%;
+    padding-right: 5%;
+}

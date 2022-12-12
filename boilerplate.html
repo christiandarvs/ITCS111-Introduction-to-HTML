@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Boilerplate</title>
+    <link rel="icon" href="programming.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="boilerplate.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="programming-code-signs.png" alt="" width="ms-auto"
+                    height="35" class="d-inline-block align-text-top" style="margin-right: 10px;">UniDevs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="learnmore.html">Learn More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="HTML5NotesForProfessionals.pdf"
+                            download="HTML5NotesForProfessionals.pdf">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>HTML Boilerplate</h1>
+    <br>
+    <div class="container-fluid" id="whole">
+        <h3>Creating an HTML File</h3>
+        <p>To demonstrate an HTML boilerplate, we first need an HTML file to work with.
+            Create a new folder on your computer and name it <code>html-boilerplate</code>. Within that folder create a
+            new file and name it <code>index.html</code>.</p>
+        <p>You're probably already familiar with a lot of different types of files, for example doc, pdf, and image
+            files.
+            To let the computer know we want to create an HTML file, we need to append the filename with the
+            <code>.html</code> extension as we have done when creating the <code>index.html</code> file.
+        </p>
+        <p>It is worth noting that we named our HTML file index. We should always name the HTML file that will contain
+            the homepage of our websites <code>index.html</code> This is because web servers will by default look for an
+            index.html page when users land on our websites - and not having one will cause big problems.</p>
+        <br>
+
+        <h3>The DOCTYPE</h3>
+        <p>Every HTML page starts with a doctype declaration. The doctype's purpose is to tell the browser what version
+            of HTML it should use to render the document. The latest version of HTML is HTML5, and the doctype for that
+            version is simply <code>!DOCTYPE html</code>.</p>
+        <p>The doctypes for older versions of HTML were a bit more complicated. For example, this is the doctype
+            declaration for HTML4:</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poKBbgv"
+            data-user="ChristianDarvin"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/poKBbgv">
+                    HTML4</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <br>
+        <p>However, we probably won't ever want to be using an older version of HTML, and so we'll always use
+            <code>!DOCTYPE html</code>. Open the <code>index.html</code> file created earlier in your text editor and
+            add <code>!DOCTYPE html</code> to the very first line.
+        </p>
+        <br>
+
+        <h3>HTML Element</h3>
+        <p>After we declare the doctype, we need to provide an <code>html</code> element. This is what's known as the
+            root element of the document, meaning that every other element in the document will be a descendant of it.
+        </p>
+        <p>This becomes more important later on when we learn about manipulating HTML with JavaScript. For now, just
+            know that the HTML element should be included on every HTML document.</p>
+        <p>Back in the index.html file, let's add the <code>html</code> element by typing out its opening and closing
+            tags, like so:</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxzeOqX"
+            data-user="ChristianDarvin"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/xxzeOqX">
+                    DOCTYPE</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <br>
+
+        <h4>What is the <code>lang</code> attribute?</h4>
+        <p><code>lang</code> specifies the language of the text content in that element. This attribute is primarily
+            used for improving accessibility of the webpage. It allows assistive technologies, for example screen
+            readers, to adapt according to the language and invoke correct pronunciation.</p>
+        <br>
+
+        <h3>Head Element</h3>
+        <p> The <code>head</code> element is where we put important meta-information about our webpages, and stuff
+            required for our webpages to render correctly in the browser. Inside the <code>head</code>, we should not
+            use any element that displays content on the webpage.
+        </p>
+
+        <br>
+        <h4>The Charset Meta Element</h4>
+        <p>We should always have the meta tag for the charset encoding of the webpage in the head element:
+            <code>meta charset="utf-8"</code>.
+            Setting the encoding is very important because it ensures that the webpage will display special symbols and
+            characters from different languages correctly in the browser.
+        </p>
+
+        <br>
+        <h4>Title Element</h4>
+        <p>The title element is used to give webpages a human-readable title which is displayed in our webpage's browser
+            tab. If we didn't include a title element, the webpage's title would default to its file name. In our case
+            that would be index.html, which isn't very meaningful for users; this would make it very difficult to find
+            our webpage if the user has many browser tabs open.</p>
+
+        <p>There are many more elements that can go within the head of an HTML document. However, for now it's only
+            crucial to know about the two elements we have covered here. We will introduce more elements that go into
+            the head throughout the rest of the curriculum.</p>
+
+        <p>Back in our <code>index.html</code> file, let's add a head element with a charset meta element and a title
+            within it. The head element goes within the HTML element and should always be the first element under the
+            opening <code>html</code> tag:</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWzmryP"
+            data-user="ChristianDarvin"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/NWzmryP">
+                    HTML-TITLE</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <br>
+
+        <h3>Body Element</h3>
+        <p>The final element needed to complete the HTML boilerplate is the <code>body</code> element. This is where all
+            the content that will be displayed to users will go - the text, images, lists, links, and so on.</p>
+        <p>To complete the boilerplate, add a body element to the <code>index.html</code> file. The body element also
+            goes within the HTML element and is always below the head element, like so:</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poKBbLb"
+            data-user="ChristianDarvin"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/poKBbLb">
+                    Untitled</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <br>
+
+        <h3>Viewing HTML Files in the Browser</h3>
+        <p>The HTML boilerplate in the <code>index.html</code> file is complete at this point, but how do you view it in
+            the browser? There are a couple of different options:</p>
+        <ol>
+            <li>You can drag and drop an HTML file from your text editor into the address bar of your browser.</li>
+            <li>You can find the HTML file in your file system and then double click it. This will open up the file in
+                the default browser your system uses.</li>
+        </ol>
+        <p>Using one of the methods above, open up the index.html file we have been working on. You'll notice the screen
+            is blank. This is because we don't have anything in our body to display.</p>
+        <p>Back in the <code>index.html</code> file, let's add a heading (more on these later) to the body, and save the
+            file:</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjZVKZL"
+            data-user="ChristianDarvin"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/JjZVKZL">
+                    Untitled</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <br>
+        <p>Now, if you refresh the page in the browser, you should see the changes take effect, and the heading “Hello
+            World!” will be displayed.</p>
+        <br>
+    </div>
+
+    </div>
+</body>
+
+</html>
