@@ -53,13 +53,13 @@
         <h3>Anchor Elements</h3>
         <p>To create a link in HTML, we use the anchor element. An anchor element is defined by wrapping the text or
             another HTML element we want to be a link with an <code>&lt;a&gt;</code> tag.</p>
-        
+
         <p>Add the following to the body of the index.html page we created and open it in the browser:</p>
-        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYaXqjv"
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzvoQvY"
             data-user="ChristianDarvin"
             style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/zYaXqjv">
-                    AnatomyofHTML</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/YzvoQvY">
+                    Links</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
                 on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -69,12 +69,78 @@
             won't know where we want to link to. We have to tell it a destination to go to. We do this by using an HTML
             attribute.</p>
 
-        <p>HTML has a vast list of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"
-                class="reference">predefined tags</a> that you can use to create all kinds of different elements. It is
-            important to use the correct tags for content. Using the correct tags can have a big impact on two aspects
-            of your sites: how they are ranked in search engines; and how accessible they are to users who rely on
-            assistive technologies, like screen readers, to use the internet.</p>
+        <p>An HTML attribute gives additional information to an HTML element and always goes in the element's opening
+            tag. An attribute is usually made up of two parts: a name, and a value; however, not all attributes require
+            a value. In our case, we need to add a <code>&lt;href&gt;</code> (hyperlink reference) attribute to the
+            opening anchor tag. The value of the href attribute is the destination we want our link to go to.</p>
+
+        <p>Add the following href attribute to the anchor element we created previously and try clicking it again, don't
+            forget to refresh the browser so the new changes can be applied.</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PoarjBd"
+            data-user="ChristianDarvin"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/PoarjBd">
+                    AddingHref</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         <br>
+        <p>By default, any text wrapped with an anchor tag without a <code>&lt;href&gt;</code> attribute will look like
+            plain text. If the <code>&lt;href&gt;</code> attribute is present, the browser will give the text a blue
+            color and underline it to signify it is a link.</p>
+        <p>It's worth noting you can use anchor tags to link to any kind of resource on the internet, not just other
+            HTML documents. You can link to videos, pdf files, images, and so on, but for the most part, you will be
+            linking to other HTML documents.</p>
+        <br>
+
+        <h3>Images</h3>
+        <p>Websites would be fairly boring if they could only display text. Luckily HTML provides a wide variety of
+            elements for displaying all sorts of different media. The most widely used of these is the image element.
+            To display an image in HTML we use the <code>&lt;img&gt;</code> element. Unlike the other elements we have
+            encountered, the <code>&lt;img&gt;</code> element is self-closing. Empty, self-closing HTML elements do not
+            need a closing tag.</p>
+        <p>Instead of wrapping content with an opening and closing tag, it embeds an image into the page using a src
+            attribute which tells the browser where the image file is located. The src attribute works much like the
+            href attribute for anchor tags. </p>
+        <p>For example, using an absolute path we can display an image located on Nike's website:</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGKPRzJ" data-user="ChristianDarvin" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/bGKPRzJ">
+            Untitled</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <br>
+          <p>So for example, if your image is <code>dinosaur.jpg</code> and it sits in the same directory as your html pages, you could embed the image like so: </p>
+          <p><code class="source">&lt;img src="dinosaur.jpg" alt=""&gt;</code></p>
+          <p>If the image was in an <code>images</code> subdirectory, which was inside the same directory as the HTML page, then you'd embed it like this:</p>
+          <p><code class="source">&lt;img src="images/dinosaur.jpg" alt=""&gt;</code></p>
+          <br>
+
+          <h3>Alt Attribute</h3>
+          <p><code>alt</code> value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection. For example, our above code could be modified like so:</p>
+          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxzoLKL" data-user="ChristianDarvin" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/ChristianDarvin/pen/xxzoLKL">
+            ImageDemo2</a> by Christian (<a href="https://codepen.io/ChristianDarvin">@ChristianDarvin</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <br>
+          <p>The alternative text will only appear if the user's internet connection is slow or there's something wrong with the configuration of the image's folder directory</p>
+          <p>So, why would you ever see or need alt text? It can come in handy for a number of reasons:</p>
+          <ul>
+            <li><p>The user is visually impaired, and is using a screen reader to read the web out to them. In fact, having alt text available to describe images is useful to most users.</p></li>
+            <li><p>As described above, the spelling of the file or path name might be wrong</p></li>
+            <li><p>The browser doesn't support the image type. Some people still use text-only browsers, such as Lynx, which displays the alt text of images.</p></li>
+            <li><p>You may want to provide text for search engines to utilize; for example, search engines can match alt text with search queries.</p></li>
+            <li><p>Users have turned off images to reduce data transfer volume and distractions. This is especially common on mobile phones, and in countries where bandwidth is limited or expensive.</p></li>
+          </ul>
+          <p>What exactly should you write inside your <code>alt</code> attribute? It depends on why the image is there in the first place. In other words, what you lose if your image doesn't show up:</p>
+          <ul>
+            <li><p><strong>Decoration</strong>. You should use CSS background images for decorative images, but if you must use HTML, add a blank <code>alt=""</code>. If the image isn't part of the content, a screen reader shouldn't waste time reading it.</p></li>
+            <li><p><strong>Content</strong>. If your image provides significant information, provide the same information in a brief <code>alt</code> text - or even better, in the main text which everybody can see. Don't write redundant alt text. How annoying would it be for a sighted user if all paragraphs were written twice in the main content? If the image is described adequately by the main text body, you can just use <code>alt=""</code>.</p></li>
+            <li><p><strong>Link</strong>. If you put an image inside <code>&lt;a&gt;</code> tags, to turn an image into a link, you still must provide accessible link text. In such cases you may, either, write it inside the same <code>&lt;a&gt;</code> element, or inside the image's <code>alt</code> attribute - whichever works best in your case.</p></li>
+            <li><p><strong>Text</strong>. You should not put your text into images. If your main heading needs a drop shadow, for example, use CSS for that rather than putting the text into an image. However, If you really can't avoid doing this, you should supply the text inside the alt attribute.</p></li>
+          </ul>
     </div>
 
     </div>

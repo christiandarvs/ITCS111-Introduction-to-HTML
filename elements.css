@@ -62,3 +62,8 @@ img{
     font-style: italic;
     font-weight: bold;
 }
+
+.source {
+    background-color: lightcyan;
+    padding: 10px;
+}
